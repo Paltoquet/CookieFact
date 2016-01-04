@@ -1,5 +1,7 @@
 package cod.tcf;
 
+import cod.ShoppingCart;
+
 public class Boulangerie {
 	private String name;
 	
