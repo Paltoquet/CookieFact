@@ -13,6 +13,7 @@ public class Voucher {
 	private String uuid;
 	// The ordered cookies.
 	private List<Item> contents;
+	private String date ;
 
 	public Voucher() {
 		uuid = UUID.randomUUID().toString();
@@ -35,6 +36,7 @@ public class Voucher {
 		return "Voucher for "+ numberOfCookies()+" cookies { " +
 				"ref: '" + uuid + '\'' +
 				" -> " + contents +
+				"boutique"+ date+
 				" }";
 	}
 }

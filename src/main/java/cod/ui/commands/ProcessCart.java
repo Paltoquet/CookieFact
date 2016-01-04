@@ -1,6 +1,7 @@
 package cod.ui.commands;
 
 import cod.CookieOnDemand;
+import cod.tcf.Boulangeries;
 import cod.tcf.Customer;
 import cod.tcf.Voucher;
 import cod.ui.framework.Command;
@@ -24,6 +25,8 @@ public class ProcessCart extends Command<CookieOnDemand> {
 		system.process(customer);
 		Voucher v = customer.getVoucher().get();
 		System.out.println("  " + v);
+
+		Boulangeries.boulangerie.addCommand(v);
 
 	}
 

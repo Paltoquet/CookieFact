@@ -15,6 +15,7 @@ public class OrderCookie extends Command<CookieOnDemand> {
 	protected Customer customer;
 	protected int quantity;
 	protected Cookie cookie;
+	protected String date;
 
 	@Override
 	public String identifier() { return "order"; }
@@ -24,12 +25,15 @@ public class OrderCookie extends Command<CookieOnDemand> {
 		customer = system.getCustomers().findByFirstName(args.get(0)).get();
 		quantity = Integer.parseInt(args.get(1));
 		cookie   = Recipes.valueOf(args.get(2));
+		date = args.get(3);
 	}
 
 	@Override
 	public void execute() {
 		ShoppingCart cart = system.getShoppingCart(customer);
-		cart.add(new Item(cookie,quantity));
+		Item i = new Item(cookie,quantity);
+		i.setDate(date);
+		cart.add(i);
 	}
 
 	@Override

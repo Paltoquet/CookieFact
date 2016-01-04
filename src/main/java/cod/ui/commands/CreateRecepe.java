@@ -33,9 +33,11 @@ public class CreateRecepe  extends Command<CookieOnDemand> {
 
 	@Override
 	public void execute() {
+		/*
 		Recipes.
 		Customer c = new Customer(customerName);
 		db.add(c);
+		*/
 	}
 
 }
