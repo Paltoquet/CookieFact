@@ -1,10 +1,9 @@
 package cod.tcf;
 
-<<<<<<< HEAD
+import cod.ShoppingCart;
+
 import java.util.LinkedList;
 
-=======
->>>>>>> e13dbb2721e25ece6f18d02575fd6afcac66daa4
 import cod.ShoppingCart;
 
 public class Boulangerie {
@@ -19,6 +18,13 @@ public class Boulangerie {
 	
 	public void addCommand(ShoppingCart sc) {
             fifo.add (sc);
-            System.out.println("Ajout commande à boulangerie");
+            System.out.println("Ajout commande ï¿½ boulangerie");
+	}
+	public void print(){
+		for(int i=0;i<fifo.size();i++){
+			for(Item k : fifo.get(i).contents()){
+				k.toString();
+			}
+		}
 	}
 }

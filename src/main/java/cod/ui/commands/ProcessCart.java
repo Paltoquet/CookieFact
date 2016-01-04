@@ -24,6 +24,7 @@ public class ProcessCart extends Command<CookieOnDemand> {
 		system.process(customer);
 		Voucher v = customer.getVoucher().get();
 		System.out.println("  " + v);
+
 	}
 
 	@Override
