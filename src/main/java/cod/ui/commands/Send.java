@@ -17,6 +17,7 @@ public class Send extends OrderCookie{
 
     @Override
     public void load(List<String> args) {
+
         customer = system.getCustomers().findByFirstName(args.get(0)).get();
 
     }
