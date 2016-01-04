@@ -8,6 +8,10 @@ import java.util.*;
 public class VolatileShoppingCart implements ShoppingCart {
 
 	private Set<Item> items = new HashSet<>();
+	private String date;
+
+	public void setDate(String s){ date =s; }
+	public String getDate() { return date; }
 
 	@Override
 	public void add(Item i) {

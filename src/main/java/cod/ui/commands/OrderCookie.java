@@ -32,7 +32,7 @@ public class OrderCookie extends Command<CookieOnDemand> {
 	public void execute() {
 		ShoppingCart cart = system.getShoppingCart(customer);
 		Item i = new Item(cookie,quantity);
-		i.setDate(date);
+		cart.setDate(date);
 		cart.add(i);
 	}
 

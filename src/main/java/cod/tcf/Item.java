@@ -9,22 +9,18 @@ public class Item {
 	private Cookie cookie;
 	// The number of cookies in the item
 	private int quantity;
-	private  String date;
 
 	public Item(Cookie cookie, int quantity) {
 		this.cookie = cookie;
 		this.quantity = quantity;
 	}
 
-	public void setDate(String date){
-		this.date=date;
-	}
 
 	public Cookie getCookie() { return cookie; }
 	public int getQuantity() { return quantity; }
 
 	@Override
-	public String toString() { return quantity + "x" + cookie.describe()+date; }
+	public String toString() { return quantity + "x" + cookie.describe(); }
 
 	@Override
 	public boolean equals(Object o) {

@@ -24,7 +24,7 @@ public class Send extends OrderCookie{
     @Override
     public void execute() {
         ShoppingCart cart = system.getShoppingCart(customer);
-        Boulangeries.boulangerie.addCommand(cart);
+       // Boulangeries.boulangerie.addCommand(cart);
     }
 
     @Override

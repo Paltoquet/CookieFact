@@ -20,7 +20,7 @@ public class ShowCart extends Command<CookieOnDemand> {
 		if (cart.contents().isEmpty()){
 			System.out.println("  Empty cart");
 		} else {
-			System.out.println("  " + cart.contents());
+			System.out.println("  " + cart.contents() + " Date: " + cart.getDate());
 		}
 	}
 

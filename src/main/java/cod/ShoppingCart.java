@@ -39,4 +39,7 @@ public interface ShoppingCart {
 	 */
 	List<Item> contents();
 
+	void setDate(String s);
+	String getDate();
+
 }
