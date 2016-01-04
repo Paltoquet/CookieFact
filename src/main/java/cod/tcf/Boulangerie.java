@@ -2,11 +2,9 @@ package cod.tcf;
 
 import java.util.LinkedList;
 
-import cod.ShoppingCart;
-
 public class Boulangerie {
 	private String name;
-	private LinkedList<ShoppingCart> fifo = new LinkedList<ShoppingCart>();
+	private LinkedList<Voucher> fifo = new LinkedList<Voucher>();
 	public Boulangerie(String name) {
 		this.name = name;
 	}
@@ -14,8 +12,8 @@ public class Boulangerie {
 		return "Boulangerie : "+name;
 	}
 	
-	public void addCommand(ShoppingCart sc) {
-            fifo.add (sc);
+	public void addCommand(Voucher voucher) {
+            fifo.add (voucher);
             System.out.println("Ajout commande à boulangerie");
 	}
 }
