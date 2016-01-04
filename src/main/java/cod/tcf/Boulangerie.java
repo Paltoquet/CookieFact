@@ -1,7 +1,10 @@
 package cod.tcf;
 
+<<<<<<< HEAD
 import java.util.LinkedList;
 
+=======
+>>>>>>> e13dbb2721e25ece6f18d02575fd6afcac66daa4
 import cod.ShoppingCart;
 
 public class Boulangerie {
