@@ -1,3 +1,5 @@
+import cod.tcf.Boulangerie;
+import cod.tcf.Boulangeries;
 import cod.ui.InteractiveCoD;
 
 /**
@@ -10,8 +12,10 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
+		Boulangeries.boulangerie = new Boulangerie ("PolytechBou");
+		
 		System.out.println("\nStarting Cookie on Demand by The Cookie Factory");
+		System.out.println(Boulangeries.boulangerie.describe());
 		InteractiveCoD icod = new InteractiveCoD();
 		icod.run();
 		System.out.println("Exiting Cookie on Demand by The Cookie Factory\n");
