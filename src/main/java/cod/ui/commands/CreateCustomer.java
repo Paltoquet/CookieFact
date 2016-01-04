@@ -13,10 +13,10 @@ public class CreateCustomer extends Command<CookieOnDemand> {
 	private String customerName;
 
 	@Override
-	public String identifier() { return "create"; }
+	public String identifier() { return "createCustomer"; }
 
 	@Override
-	public String describe() { return "create a new customer in the system (create CUSTOMER)"; }
+	public String describe() { return "create a new customer"; }
 
 	@Override
 	public void load(List<String> args) { customerName = args.get(0); }
